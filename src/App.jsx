@@ -1,12 +1,13 @@
 import './css/style.css';
 import Navigation from './resource/Navigation';
 import Search from './resource/Search';
-import Filter from './resource/Filter';
+import Filter from './resource/Filter/Filter';
 import PlaylistTitle from './resource/PlaylistTitle';
 import PlaylistItem from './resource/PlaylistItem';
 import Account from './resource/Account';
-import Sidebar from './resource/Sidebar';
+import Sidebar from './resource/Sidebar/Sidebar';
 import Bar from './resource/bar';
+
 
 function App() {
   return (
@@ -42,6 +43,7 @@ function App() {
         <div className="bar">
           <Bar title = "Ты та..." author = "Баста"/>
         </div>
+        <footer className="footer"></footer>
       </div>
   </div>
   );
