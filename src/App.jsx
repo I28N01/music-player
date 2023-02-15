@@ -1,28 +1,28 @@
-import './css/style.css';
-import Navigation from './resource/Navigation';
-import Search from './resource/Search';
+import AppCSS from './App.module.scss';
+import Navigation from './resource/Navigation/Navigation';
+import Search from './resource/Search/Search';
 import Filter from './resource/Filter/Filter';
-import PlaylistTitle from './resource/PlaylistTitle';
-import PlaylistItem from './resource/PlaylistItem';
-import Account from './resource/Account';
+import PlaylistTitle from './resource/PlaylistTitle/PlaylistTitle';
+import PlaylistItem from './resource/PlaylistItem/PlaylistItem';
+import Account from './resource/Account/Account';
 import Sidebar from './resource/Sidebar/Sidebar';
-import Bar from './resource/bar';
+import Bar from './resource/Bar/bar';
 
 
 function App() {
   return (
-  <div className="wrapper">
-      <div className="container">
-        <main className="main">
+  <div className={AppCSS.wrapper}>
+      <div className={AppCSS.container}>
+        <main className={AppCSS.main}>
           <Navigation />
-          <div className="main__centerblock centerblock">
+          <div className={AppCSS.main__centerblock}>
             <Search />
-            <h2 className="centerblock__h2">Треки</h2>
+            <h2 className={AppCSS.centerblock__h2}>Треки</h2>
             <Filter />
-            <div className="centerblock__content">
+            <div className={AppCSS.centerblock__content}>
               <PlaylistTitle />
             </div>
-            <div className="content__playlist playlist">
+            <div className={AppCSS.content__playlist}>
             <PlaylistItem title = "Guilt"  author="Nero" album="Welcome Reality" time ="4:33"/>
             <PlaylistItem title = "Elektro" author="Dynoro, Outwork, Mr. Gee" album="Elektro" time ="2:22"/>
             <PlaylistItem title = "I’m Fire" author="Ali Bakgor" album="I’m Fire" time ="2:22"/>
@@ -35,15 +35,15 @@ function App() {
             <PlaylistItem title = "Morena" author="Tom Boxer" album="Soundz Made in Romania" time ="3:36"/>
             </div>
           </div>
-          <div className="main__sidebar sidebar">
+          <div className={AppCSS.main__sidebar}>
               <Account login = "Ilyas.Beisenov" />
               <Sidebar />
             </div>
         </main>
-        <div className="bar">
+        <div className={AppCSS.bar}>
           <Bar title = "Ты та..." author = "Баста"/>
         </div>
-        <footer className="footer"></footer>
+        <footer></footer>
       </div>
   </div>
   );
