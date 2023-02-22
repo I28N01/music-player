@@ -24,6 +24,7 @@ function Navigation() {
                     <li className={NavigationCSS.menu__item}><a href="#" className={NavigationCSS.menu__link}>Мой плейлист</a></li>
                     <li className={NavigationCSS.menu__item}><a href="#" className={NavigationCSS.menu__link}>Войти</a></li>
                 </ul>
+
             </div>
             )}
         </nav>
