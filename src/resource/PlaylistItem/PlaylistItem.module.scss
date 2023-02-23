@@ -1,3 +1,13 @@
+:root[data-theme="light"] {
+    --background-image-cover:url('../../img/cover-light.png');
+    --color-cover: #fff;
+  }
+  
+  :root[data-theme="dark"] {
+    --background-image-cover:url('../../img/cover.png');
+    --color-cover: #313131;
+  }
+
 .playlist {
 
     &__item {
@@ -29,11 +39,12 @@
         width: 51px;
         height: 51px;
         padding: 16px;
-        background: #313131;
+        background: var(--color-cover);
         display: flex;
         align-items: center;
         justify-content: center;
         margin-right: 17px;
+        background-image: var(--background-image-cover);
     }
 
 
@@ -42,7 +53,6 @@
         font-weight: 400;
         font-size: 16px;
         line-height: 24px;
-        color: #FFFFFF;
     }
 
     &__title_span {
@@ -64,7 +74,7 @@
         font-weight: 400;
         font-size: 16px;
         line-height: 24px;
-        color: #FFFFFF;
+        color: var(--color);
         text-align: left;
     }
 

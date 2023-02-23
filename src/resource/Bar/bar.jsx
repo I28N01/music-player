@@ -10,7 +10,7 @@ import repeat from '../../img/icon/repeat.png';
 import shuffle from '../../img/icon/shuffle.png';
 import like from '../../img/icon/like.png';
 import dislike from '../../img/icon/dislike.png';
-import trackCover from '../../img/icon/cover.png';
+// import trackCover from '../../img/cover.png';
 
 
 function Bar(props) {
@@ -82,9 +82,7 @@ function Bar(props) {
 
           <div className={BarCSS.player__track_play}>
             <div className={BarCSS.track_play__contain}>
-              <div className={BarCSS.track_play__image}>
-              <img src={trackCover} alt="music" />
-              </div>
+              <div className={BarCSS.track_play__image}></div>
               <div className={BarCSS.track_play__author}>
                 <a className={BarCSS.track_play__author_link} href={props.titleHref}>{props.title} <span className="track__title_span">{props.titleSpan}</span></a>
               </div>

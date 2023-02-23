@@ -1,6 +1,6 @@
 import React from 'react';
 import PlaylistItemCSS from './PlaylistItem.module.scss';
-import trackCover from '../../img/icon/cover.png';
+// import trackCover from '../../img/icon/cover.png';
 import Skeleton from 'react-loading-skeleton'
 import 'react-loading-skeleton/dist/skeleton.css'
 
@@ -10,7 +10,7 @@ function PlaylistItem(props) {
         <div className={PlaylistItemCSS.playlist__track}>
             <div className={PlaylistItemCSS.track__title}>
                 <div className={PlaylistItemCSS.track__title_image}>
-                <img src={trackCover} alt="music" />
+                {/* <img src={trackCover} alt="music" /> */}
                 </div>
                 <div className={PlaylistItemCSS.track__title_text}>
                     <a className={PlaylistItemCSS.track__title_link} href={props.titleHref} >{props.title  || <Skeleton />} <span className={PlaylistItemCSS.track__title_span}>{props.titleSpan}</span></a>

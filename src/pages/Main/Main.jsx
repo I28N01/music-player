@@ -9,6 +9,7 @@ import Sidebar from '../../resource/Sidebar/Sidebar';
 import Bar from '../../resource/Bar/bar';
 
 
+
 function Main() {
   return (
   <div className={MainCSS.wrapper}>

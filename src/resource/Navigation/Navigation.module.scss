@@ -1,3 +1,11 @@
+:root[data-theme="light"] {
+    --background-color-nav: #F6F5F3;
+  }
+  
+  :root[data-theme="dark"] {
+    --background-color-nav: #1C1C1C;
+  }
+
 .main {
     flex: 1 1 auto;
     display: flex;
@@ -6,7 +14,7 @@
 
     &__nav {
         width: 244px;
-        background-color: #181818;
+        background-color:var(--background-color-nav);
         padding: 20px 0 20px 36px;
     }
 
@@ -81,7 +89,7 @@
     }
 
     &__link {
-        color: #FFFFFF;
+        color: var(--color);
         font-weight: 400;
         font-size: 16px;
         line-height: 24px;
